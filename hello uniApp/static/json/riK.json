@@ -1,0 +1,161 @@
+{
+	"tooltip":{
+		"trigger":"none",
+		"axisPointer":{
+			"type":"cross",
+			"crossStyle":{
+				"color":"#000",
+				"type":"solid"
+			}
+		}
+	},
+	"grid": [{
+							"top": 10,
+							"left":0,
+							"height": 200,
+							"width": 350,
+							"show":true
+						},{
+							"show":true,
+							"top": 230,
+							"left":0,
+							"width": 350,
+							"height": 50
+						}],
+	"xAxis":[{
+			"gridIndex":0,
+			"type":"category",
+			"data":"this.times",
+			"boundaryGap": false,
+			"splitLine":{
+				"show": true,
+				"lineStyle":{
+					"type":"dashed"
+				}
+			},
+			"axisLabel":{
+				"align":"left"
+			},
+			"axisLine":{
+				"show":false
+			},
+			"axisTick":{
+			 	"show":false
+			}
+		},{
+			"gridIndex":1,
+			"type":"category",
+			"data":"",
+			"boundaryGap": true,
+			"show":false,
+			"splitLine":{
+				"show": true,
+				"lineStyle":{
+					"type":"dashed"
+				}
+			}
+		}],
+	"yAxis":[{
+			"gridIndex": 0,
+			"type":"value",
+			"show":false,
+			"scale":true,
+			"splitLine":{"show": false}
+		},{
+			"gridIndex": 1,
+			"type":"value",
+			"show":false,
+			"scale":true,
+			"splitLine":{"show": false}
+		}],
+		"dataZoom":[
+			{
+				"show":true,
+				"xAxisIndex":[0,1],
+				"type":"inside",
+				 "startValue":"",
+				 "endValue":""
+			}
+		],
+	"series":[{
+		"name":"模拟数据",
+		"data":[],
+		"type":"candlestick",
+		"symbol":"none",
+		"markPoint":{
+			"data": [
+				{
+					"name": "最大值",
+					"type": "max"
+				},{
+					"name": "最小值",
+					"type": "min"
+				}
+			]
+		},
+		"markLine":{
+			"symbol": "none",
+			"data":[{
+					"yAxis": 2000,
+					"lineStyle": {
+						"type": "dashed",
+						"color": "#999"
+					}
+				}],
+			"label":{
+				"show":true,
+				"position":"middle",
+				"padding": [0,330,0,0]
+			}
+		},
+		"lineStyle":{
+			"color":"black",
+			"type":"solid"
+		},
+		"xAxisIndex": 0,
+		"yAxisIndex": 0
+	},{
+		"name":"macd5",
+		"data":[],
+		"type":"line",
+		"symbol":"none",
+		"lineStyle":{
+			"color":"black",
+			"type":"solid",
+			"opacity":0.3
+		},
+		"xAxisIndex": 0,
+		"yAxisIndex": 0
+	},{
+		"name":"macd10",
+		"data":[],
+		"type":"line",
+		"symbol":"none",
+		"lineStyle":{
+			"color":"#5b59d7",
+			"type":"solid",
+			"opacity":0.3
+		},
+		"xAxisIndex": 0,
+		"yAxisIndex": 0
+	},{
+		"name":"macd30",
+		"data":[],
+		"type":"line",
+		"symbol":"none",
+		"lineStyle":{
+			"color":"#e34171",
+			"type":"solid",
+			"opacity":0.3
+		},
+		"xAxisIndex": 0,
+		"yAxisIndex": 0
+	},{
+			"name":"模拟数据2",
+			"xAxisIndex": 1,
+			"yAxisIndex": 1,
+			"data":[300,235,415,466,285,415,832,423,163,415,513,246,415,123],
+			"type": "bar"
+			
+		}]
+}

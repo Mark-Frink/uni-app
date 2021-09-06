@@ -1,0 +1,180 @@
+{
+	"tooltip":{
+		"trigger":"none",
+		"axisPointer":{
+			"type":"cross",
+			"crossStyle":{
+				"color":"#000",
+				"type":"solid"
+			}
+		}
+	},
+	"grid": [{
+							"top": 10,
+							"left":0,
+							"height": 200,
+							"width": 350,
+							"show":true
+						},
+						{
+							"show":true,
+							"top": 230,
+							"left":0,
+							"width": 350,
+							"height": 50
+						}
+					],
+	"xAxis":[{
+			"gridIndex":0,
+			"type":"category",
+			"data":"this.times",
+			"boundaryGap": false,
+			"splitLine":{
+				"show": true,
+				"lineStyle":{
+					"type":"dashed"
+				}
+			},
+			"axisLabel":{
+				"align":"left"
+			},
+			"axisLine":{
+				"show":false
+			},
+			"axisTick":{
+			 	"show":false
+			}
+		},{
+			"gridIndex":1,
+			"type":"category",
+			"data":"this.times",
+			"boundaryGap": true,
+			"show":false,
+			"splitLine":{
+				"show": true,
+				"lineStyle":{
+					"type":"dashed"
+				}
+			}
+		}],
+	"yAxis":[{
+			"gridIndex": 0,
+			"type":"value",
+			"show":false,
+			"splitLine":{"show": false}
+		},{
+			"gridIndex": 0,
+			"type":"value",
+			"show":false,
+			"splitLine":{"show": false},
+			"axisLabel": {"formatter": "{value}%"}
+		},{
+			"gridIndex": 1,
+			"type":"value",
+			"show":false,
+			"splitLine":{"show": false}
+		},{
+			"gridIndex": 1,
+			"type":"value",
+			"show":false,
+			"splitLine":{"show": false},
+			"axisLabel": {"formatter": "{value}%"}
+		}],
+	"series":[{
+			"name":"模拟数据",
+			"data":[],
+			"type":"line",
+			"symbol":"none",
+			"markLine":{
+				"symbol": "none",
+				"data":[{
+						"yAxis": 500,
+						"name":"xxx",
+						"lineStyle": {
+							"type": "dashed",
+							"color": "#999"
+						}
+					}],
+				"label":{
+					"show":true,
+					"position":"middle",
+					"padding": [0,330,0,0]
+				}
+			},
+			"lineStyle":{
+				"color":"black",
+				"type":"solid"
+			},
+			"xAxisIndex": 0,
+			"yAxisIndex": 0
+		},{
+			"name":"模拟数据2",
+			"xAxisIndex": 1,
+			"yAxisIndex": 2,
+			"data": [],
+			"type": "bar",
+			"markLine":{
+				"symbol": "none",
+				"data":[{
+						"yAxis": 500,
+						"lineStyle": {
+							"type": "dashed",
+							"color": "#999"
+						}
+					}],
+					"label":{
+						"show":true,
+						"position":"middle",
+						"padding": [0,330,0,0]
+					}
+			}
+		},{
+			"name":"模拟数据3",
+			"xAxisIndex": 0,
+			"yAxisIndex": 1,
+			"data":[],
+			"type":"line",
+			"symbol":"none",
+			"lineStyle":{
+				"color":"yellow",
+				"type":"solid"
+			},
+			"markLine":{
+				"symbol": "none",
+				"data":[{
+						"yAxis": 50,
+						"lineStyle": {
+							"type": "dashed",
+							"color": "#999"
+						}
+					}],
+				"label":{
+					"show":true,
+					"position":"middle",
+					"padding": [0, 0,0,330]
+				}
+			}
+		},{
+			"name":"模拟数据4",
+			"xAxisIndex": 1,
+			"yAxisIndex": 3,
+			"data": [],
+			"type": "bar",
+			"markLine":{
+				"symbol": "none",
+				"data":[{
+						"yAxis": 50,
+						"lineStyle": {
+							"type": "dashed",
+							"color": "#999"
+						}
+					}],
+				"label":{
+					"show":true,
+					"position":"middle",
+					"padding": [0, 0,0,330]
+				}
+			}
+		}
+	]
+}
